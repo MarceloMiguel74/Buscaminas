@@ -236,7 +236,6 @@ function iniciarEvent(audio){
 		reproSon("boton.mp3");
 	});
 	document.getElementById("sli").addEventListener("change",function(){
-		alert("Esta función todavia no esta acabada")
 		var valor = document.getElementById("sli").value;
 		var conte = document.createElement("div");
 		var rel = document.createElement("div");
@@ -477,7 +476,7 @@ function form(){
 		if(dificul>(tamy*tam)){
 			alert("Demasiadas bombas");
 		}else{
-			if(tam==NaN || tamy==NaN){
+			if(isNaN(tam) || isNaN(tamy) || isNaN(dificul)){
 				alert("Número de filas o columnas no aceptado. Por favor repita.");
 			}else{
 				tamc=tamy*tam;
